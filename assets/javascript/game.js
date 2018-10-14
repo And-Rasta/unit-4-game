@@ -16,7 +16,7 @@
 $(document).ready(function(){
 
 // Selects a random number (between 19-120) to be shown at the start of the game
-var Random = Math.floor(Math.random()*101+19)
+var random = Math.floor(Math.random()*101+19)
 // Appending random number to the randomNumber ID in the html doc
 $('#randomNumber').text(Random);
 
