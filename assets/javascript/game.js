@@ -37,7 +37,7 @@ $('#losses').text(losses);
 // reset game
 function reset(){
     random = Math.floor(Math.random()*101+19);
-    console.log(Random)
+    console.log(random)
     $('#randomNumber').text(random);
     rainbowGem = Math.floor(Math.random()*11+1);
     greenGem = Math.floor(Math.random()*11+1);
