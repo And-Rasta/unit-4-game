@@ -1,7 +1,26 @@
-/* .crystal-title {
+.crystal-title {
     width: 150px;
-    height: 120px;;
-} */
+    height: 150px;;
+}
+
+.display-4 {
+   background: -webkit-linear-gradient(#d39ace, #1a3d9c);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;   
+}
+
+h1 {
+   font-family: 'IM Fell DW Pica SC', serif;
+   background: -webkit-linear-gradient(#44198f, #ffd059);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;  
+}
+
+#randomNumber, #userScore {
+    background: -webkit-linear-gradient(#25198f, #08daac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+ }
 
 .crystal-small {
     width: 150px;
