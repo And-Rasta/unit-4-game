@@ -55,7 +55,7 @@ function win(){
       reset();
     }
 
-//Add the losses to the userScore
+// Add the losses to the userScore
     function loss(){
     alert ("You lose!");
       losses++;
