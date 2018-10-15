@@ -18,7 +18,7 @@ $(document).ready(function(){
 // Selects a random number (between 19-120) to be shown at the start of the game
 var random = Math.floor(Math.random()*101+19)
 // Appending random number to the randomNumber ID in the html doc
-$('#randomNumber').text(Random);
+$('#randomNumber').text(random);
 
 // Set Crystal variable values
 var rainbowGem = Math.floor(Math.random()*11+1)
@@ -36,9 +36,9 @@ $('#losses').text(losses);
 
 // reset game
 function reset(){
-    Random = Math.floor(Math.random()*101+19);
+    random = Math.floor(Math.random()*101+19);
     console.log(Random)
-    $('#randomNumber').text(Random);
+    $('#randomNumber').text(random);
     rainbowGem = Math.floor(Math.random()*11+1);
     greenGem = Math.floor(Math.random()*11+1);
     redGem = Math.floor(Math.random()*11+1);
@@ -69,10 +69,10 @@ function win(){
         console.log("New userScore = " + userScore);
         $('#userScore').text(userScore); 
 // Set win/lose conditions
-        if (userScore == Random){
+        if (userScore == random){
             win();
             }
-        else if (userScore > Random){
+        else if (userScore > random){
             loss();
             }   
       })
@@ -81,10 +81,10 @@ function win(){
         userScore = userScore + greenGem;
         console.log("New userScore = " + userScore);
         $('#userScore').text(userScore); 
-        if (userScore == Random){
+        if (userScore == random){
             win();
             }
-        else if (userScore > Random){
+        else if (userScore > random){
             loss();
             } 
       }) 
@@ -93,10 +93,10 @@ function win(){
         userScore = userScore + redGem;
         console.log("New userScore = " + userScore);
         $('#userScore').text(userScore); 
-        if (userScore == Random){
+        if (userScore == random){
             win();
             }
-        else if (userScore > Random){
+        else if (userScore > random){
             loss();
             } 
       }) 
@@ -105,10 +105,10 @@ function win(){
         userScore = userScore + blueGem;
         console.log("New userScore = " + userScore);
         $('#userScore').text(userScore); 
-        if (userScore == Random){
+        if (userScore == random){
             win();
             }
-        else if (userScore > Random){
+        else if (userScore > random){
             loss();
             } 
       }); 
